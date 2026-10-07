@@ -35,11 +35,14 @@ Vragen 8 en 10 waren de moeilijkste vanwege interessante regels en foutieve decl
 
 - Welke selector koos je voor de links in de navigatie, en waarom geen class?
 - Welke regel kostte je het meeste tijd, en wat was uiteindelijk de oorzaak?
-Vanwege  gebrek aan ervaring en abstract begrip van meerdere concepten, kostte bijna alles wat tijd en daarna nog meerdere aanpassingen om de code robuster te maken.
+Vanwege  gebrek aan ervaring en abstract begrip van meerdere concepten, kostte bijna alles wat tijd en daarna nog meerdere aanpassingen om de code robuster te maken. In de navigatie koos ik nav a en footer a. Ik heb dat gedaan omdat het gewoon gemakkelijker is ,en ik geen nut van class zag.
 ## 6. Je site
 
 - Welke drie waarden staan in je tokenblok, en waarom die?
+Er zijn meer dan drie, maar de voornamelijkste zijn de kleuren voor de tekst, de achtergrond en de font voor de tekst. Omdat sommige kleuren en lettertypen niet overduidelijk zijn en die ​​uit hexadecimale waarden bestaan. Om ze gemakkelijk meerdere keren te kunnen gebruiken, is het zeer handig.
 - Wat verandert er in je site als je één token wijzigt?
+Al de elementen waarop je de token toegapst heb, zullen ok van waarde veranderen.
+
 
 ## Thuis: R2.3 (met AI)
 
