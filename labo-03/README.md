@@ -1,30 +1,32 @@
 # Labo 3 - reflecties
 
-Naam: (jouw naam)
+Naam: Denys Moroz
 
 ## 1. Kleurenstalen
 
 - Welke twee waarden uit de user agent stylesheet moest je op de lijst wegwerken, en waar las je ze af?
+list-style en padding-left. Met behulp van DevTools en elements erin.
 - Wat verandert er aan de banden als je het venster hoger maakt, en wat verandert er niet?
+Banden worden mee hoger als ik het venster hoger maak.
 
 ## 2. Slogan
 
-- Welke property centreerde de tekst, en welke de kolom?
-- Waarom werkte de padding op de knop pas na `display: inline-block`?
+- Welke property centreerde de tekst, en welke de kolom? text-align: center centreerde te tekst, en margin: 12rem auto centreerde de kolom.
+- Waarom werkte de padding op de knop pas na `display: inline-block`? Omdat a is een inline element.
 
 ## 3. Tabblad
 
-- Wat is de visuele breedte van het tabblad, en waarom is dat exact 15rem en geen 15rem plus padding plus border?
+- Wat is de visuele breedte van het tabblad, en waarom is dat exact 15rem en geen 15rem plus padding plus border? Vanwege box-sizing: border-box; in reset, zijn padding en border inbegrepen.
 
 ## 4. Donut
 
-- Waarom werkt `height: 70%` op de cirkel, terwijl F3.2 zegt dat een procentuele hoogte meestal niets doet?
-- Tegen welke maat van de ouder rekende de browser `margin: 15%`: de breedte of de hoogte?
+- Waarom werkt `height: 70%` op de cirkel, terwijl F3.2 zegt dat een procentuele hoogte meestal niets doet? Omdat de ouder 90vh hoog is en het percentage hangt ervan af.
+- Tegen welke maat van de ouder rekende de browser `margin: 15%`: de breedte of de hoogte? Tegen de breedte van de ouder
 
 ## 5. Landingspagina
 
-- Gaf je `main` een `height` of een `min-height`, en waarom?
-- Wat gebeurt er met de twee helften als je een regeleinde zet tussen `</article>` en `<div class="afbeelding">`?
+- Gaf je `main` een `height` of een `min-height`, en waarom? min-height omdat de hero minstens 80vh moet zijn om het venster proper te vullen.
+- Wat gebeurt er met de twee helften als je een regeleinde zet tussen `</article>` en `<div class="afbeelding">`? De tweede regel valt eronder omdat dit regeleinde wordt als een spatie beschouwd.
 
 ## Thuis: B3.1 (met AI of zonder AI)
 

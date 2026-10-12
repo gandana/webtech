@@ -2,7 +2,42 @@
 
 /* === tokens === */
 :root {
+--oranje: #ec4b03;
+--paars: #b99ec1;
+--geel: #f9b700;
 
 }
-
 /* === your rules === */
+
+main {
+    background-color: var(--oranje);
+    margin: 5vh auto;
+    height: 90vh;
+    width: 90vh;
+    border: 0.75rem solid black ;
+}
+
+main > div {
+    width: 70%;
+    height: 70%;
+    margin: 15%;
+    background-color: var(--paars);
+    border-radius:50%;
+    border: 0.75rem black solid;
+    overflow: hidden;
+}
+
+div > h1{
+    background-color: var(--geel);
+    width: 90%;
+    height: 90%;
+    margin: -7% 0 0 -7%;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 0.75rem black solid;
+    padding-top: 40%;
+    font-weight: bold;
+     
+}
+
+

@@ -2,7 +2,95 @@
 
 /* === tokens === */
 :root {
+--banner: #c8b8ff;
+--link: #5551ff;
+--hero: #779cee;
+--font: Arial, Helvetica, sans-serif;
+}
+/* === your rules === */
+body {
+    font-family: var(--font);
+    color: black;
+}
+
+.banner {
+    background-color: var(--banner);
+    padding: 1rem;
+    text-align: center;
+    
+}
+
+.banner a {
+   color: var(--link);
+}
+
+.banner a:hover,
+.banner a:focus {
+    text-decoration: none;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    text-align: right;
+    padding: 1rem 2rem;
+}
+
+nav ul {
+    list-style: none;
+    
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 1.5rem;
+    
+}
+
+main {
+    background-color: var(--hero);
+    min-height: 80vh;
 
 }
 
-/* === your rules === */
+main article {
+    padding: 8rem 10rem 4rem 4rem;
+}
+
+main article p {
+    margin-bottom: 1.5rem;
+    line-height: 1.5rem;
+}
+
+main h1 {
+   margin-bottom: 1.5rem;
+   
+}
+
+main article, .afbeelding {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+
+}
+
+ img {
+    width: 70%;
+}
+
+.knop {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem 2rem;
+    background-color:black;
+    color:white;
+}
+
+.knop:hover,
+.knop:focus {
+background-color: black;
+}
