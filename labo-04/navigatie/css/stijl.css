@@ -1,0 +1,91 @@
+/* stijl.css - labo 4, navigatie (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+--balk: #1f3a2e;
+--tekst: #f3efe6;
+--accent: #e6b53c;
+}
+
+/* === your rules === */
+/*header {
+    display:flex;
+    background-color: var(--balk);
+    padding: 1rem 2rem 1rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+
+
+
+}
+
+header > a {
+    font-size: 1.5rem;
+}
+
+ul {
+    display:flex;
+    list-style: none;  
+    gap: 0.5rem;
+  
+
+}
+
+a {
+    display:inline-block;
+    text-decoration: none;
+    color: var(--tekst);
+}
+
+.logo {
+    color: var(--accent);
+}
+
+a:hover,
+a:focus {
+    padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+    border-radius: 0.5rem;
+    background-color: var(--accent);
+    
+
+}*/
+
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #1f3a2e;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    color: var(--accent);
+}
+
+li a {
+    color: var(--tekst);
+    padding: 0.75 1rem;
+}
+
+.actief, li a:hover {
+    background-color: #e6b53c;
+    border-radius: 0.5rem;
+    
+}

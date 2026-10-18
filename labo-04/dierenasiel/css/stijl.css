@@ -1,0 +1,128 @@
+/* stijl.css - labo 4, dierenasiel (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+--papier: #f7f4ec;
+--inkt: #2b2b2b;
+--gedempt: #6b6b6b;
+--balkknop: #1f3a2e;
+--tekst: #f3efe6;
+--accent: #e6b53c;
+
+}
+
+/* === your rules === */
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    background-color: var(--papier);
+    color: var(--inkt);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+}
+
+.logo {
+    color:var(--accent);
+        
+}
+
+ main {
+    max-width: 60rem;
+    padding: 2rem;
+    margin: 0 auto;
+ }
+
+ .kaarten {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.5rem;
+    padding-left: 0;
+    
+ }
+
+ .uitgelicht {
+    grid-column: 1 / 3;
+}
+
+.kaart {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+    background-color: white;
+    
+}
+
+.beschrijving {
+    flex: 1;
+    margin-bottom: 1.5rem;
+}
+
+.kaart h2 {
+    margin-bottom: 0.5rem;
+}
+
+.knop {
+    display: inline-block;
+    background-color: var(--balkknop);
+    color: var(--tekst);
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--balkknop);
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+li a {
+    color: var(--tekst);
+    
+}
+
+.actief, li a:hover {
+    color: var(--accent);
+    
+    
+}
+
+nav a:hover,
+nav a:focus {
+    text-decoration: underline;
+}
+
+.knop:hover,
+.knop:focus {
+    background-color: var(--inkt);
+}
+
+footer {
+    background-color: var(--balkknop);
+    color: var(--tekst);
+    text-align:center;
+    padding: 1rem 2rem;
+}
+
+.intro {
+    color: var(--gedempt);
+}
