@@ -1,0 +1,115 @@
+/* stijl.css - labo 6, dashboard (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+--papier: #f3f1ec;
+--titeltegel: #1f2933;
+--grafiektegel: #2c6e8f;
+--omzettegel: #c8742e;
+--bezoekerstegel: #3b7a2a;
+--agendategel: #6b4fa3;
+--takentegel: #b2323a;
+--weertegel: #e0b43a;
+--donkeretekst: #1f2933;
+}
+
+/* === base: narrow screens first === */
+main {
+    min-height:100svh;
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    color:var(--papier);
+    line-height: 1.4;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    background-color: var(--papier);
+}
+
+.titel {
+    background-color: var(--titeltegel);
+    font-size: 1.5rem;
+}
+
+.grafiek {
+    background-color: var(--grafiektegel);
+}
+
+.omzet {
+    background-color: var(--omzettegel);
+}
+
+.bezoekers {
+    background-color: var(--bezoekerstegel);
+}
+
+.agenda {
+    background-color: var(--agendategel);
+}
+
+.taken {
+    background-color: var(--takentegel);
+}
+
+.weer {
+    background-color: var(--weertegel);
+    color: var(--donkeretekst);
+}
+
+.tegel {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    min-height: 6rem;
+    
+}
+/* === media queries: below the base rules === */
+@media (min-width: 50rem) {
+    main {
+        align-content: start;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .titel,
+    .grafiek,
+    .weer {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (min-width: 75rem) {
+    main {
+        
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: auto 1fr 1fr;
+    }
+
+    .grafiek {
+        grid-column: 1/3;
+        grid-row: 2/4;
+    }
+    .titel,
+    .weer {
+        grid-column: 1 / -1;
+    }
+
+    .omzet {
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    .agenda {
+        grid-column: 4;
+        grid-row: 2;
+    }
+
+    .bezoekers {
+        grid-column: 3;
+        grid-row: 3;
+    }
+
+    .taken {
+        grid-column: 4;
+        grid-row: 3;
+    }
+
+}

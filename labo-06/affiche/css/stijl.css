@@ -1,0 +1,116 @@
+/* stijl.css - labo 6, affiche (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+--pagina: #1d1d1b;
+--affiche: #2554ab;
+--tekst: #fff8ee;
+--sticker: clamp(4rem, 14vw, 7rem);
+
+}
+
+/* === base: narrow screens first === */
+body {
+    background-color: var(--pagina);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: clamp(2rem, 8vw, 3.5rem);
+    line-height: 1.05;
+}
+
+.ondertitel {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.affiche {
+    position: relative;
+    width: min(28rem, 100% - 2rem);
+    background-color: var(--affiche);
+    aspect-ratio: 3/4;
+    margin: 2rem auto;
+    padding: clamp(1.5rem, 6vw, 3rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--tekst);
+}
+
+.sticker {
+    position: absolute;
+    height: var(--sticker);
+    width: var(--sticker);
+    display: grid;
+    place-items: center;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: bold;
+
+}
+
+.prijs {
+    background-color: #ffc83d;
+    border-radius: 50%;
+    color: var(--pagina);
+    font-size: 1.25rem;
+    top: 2.5rem;
+    left: 2.5rem;
+    z-index: 5;
+}
+
+.datum {
+    background-color: white;
+    color: var(--pagina);
+    left: 1rem;
+    top: 1rem;
+    z-index: 2;
+}
+
+.uitverkocht {
+    background-color: #d6341c;
+    border-radius: 50%;
+    z-index: 5;
+    top: 5.5rem;
+    left: 5.5rem;
+    overflow-wrap: anywhere;
+
+}
+
+.logo {
+    background-color: #1d1d1b;
+    font-size: 1.25rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    z-index: 4;
+    top: 4rem;
+    left: 4rem;
+}
+/* === media queries: below the base rules === */
+@media(min-width: 50rem) {
+    .logo {top: auto; left: auto;
+        right: 6rem; bottom: 3rem;}
+    .uitverkocht {
+        top: auto;
+        left: auto;
+        right: 2rem;
+        bottom: 1rem;
+    }
+
+}
+
+@media(min-width: 62.5rem) {
+    .prijs {
+        left: auto;
+        right: 2rem;
+        top: 2rem;
+    }
+
+    .logo {
+        right: auto;
+        left: 2rem;
+        bottom: 1rem;
+    }
+}

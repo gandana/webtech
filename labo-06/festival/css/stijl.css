@@ -1,0 +1,147 @@
+/* stijl.css - labo 6, festival (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+--papier: #fff8ee;
+--inkt: #1a1a1a;
+--gedempt: #6b6b6b;
+--accent: #d6341c;
+--lijn: #e3d9c8;
+
+}
+
+/* === base: narrow screens first === */
+body {
+    background-color: var(--papier);
+    color: var(--inkt);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 1rem;
+}
+
+.logo {
+    border: none;
+    font-weight:lighter;
+    font-size: 2rem;
+    color: var(--accent);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    align-items: center;
+    
+}
+
+h1, h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+    
+}
+
+header a {
+    display: block;
+    border: 2px solid var(--accent);
+    border-radius: 2rem;
+    color: var(--accent);
+    padding: 0.75rem 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+header a.actief {
+    background-color: var(--accent);
+    color: white;
+}
+
+.held {
+    padding: clamp(2rem, 8vw, 6rem) clamp(1rem, 5vw, 4rem);
+    background: var(--accent);
+    color: white;
+    
+}
+
+.held h1 {
+    font-size: clamp(2rem, 5vw + 1rem, 4rem);
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+.programma {
+    max-width: 44rem;
+    padding: clamp(1.5rem, 5vw, 3rem) clamp(1rem, 5vw, 4rem);
+}
+
+.programma li {
+    display: flex;
+    gap: 1rem;
+    border-bottom: 1px solid var(--lijn);
+}
+
+.programma li time {
+    color: var(--accent);
+    min-width: 4rem;
+
+}
+
+.programma li span {
+    margin-left: auto;
+    color: var(--gedempt);
+}
+
+footer {
+    color: var(--gedempt);
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: white;
+    color: var(--inkt);
+}
+/* === media queries: below the base rules === */
+@media(min-width:50rem) {
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+        width: auto;
+    }
+
+    .programma {
+        margin-inline: auto;
+    }
+
+    section h2 {
+        margin-left: auto;
+    }
+   
+}
+
+@media(min-width: 75rem) {
+    header {
+        flex-direction: row;
+    }
+
+    .logo {
+        margin-right: auto;
+    }
+
+    section h2 {
+        margin-left: 20rem;
+    }
+}
